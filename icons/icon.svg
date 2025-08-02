@@ -1,0 +1,26 @@
+<svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="128" height="128" rx="24" fill="#4a89dc"/>
+  
+  <!-- Tab groups representation -->
+  <!-- First tab group -->
+  <rect x="24" y="24" width="80" height="22" rx="6" fill="#ffffff" opacity="0.9"/>
+  <rect x="30" y="30" width="12" height="10" rx="2" fill="#ff7f50"/>
+  <rect x="46" y="30" width="12" height="10" rx="2" fill="#ff7f50"/>
+  <rect x="62" y="30" width="12" height="10" rx="2" fill="#ff7f50"/>
+  
+  <!-- Second tab group -->
+  <rect x="32" y="54" width="80" height="22" rx="6" fill="#ffffff" opacity="0.9"/>
+  <rect x="38" y="60" width="12" height="10" rx="2" fill="#7fda55"/>
+  <rect x="54" y="60" width="12" height="10" rx="2" fill="#7fda55"/>
+  <rect x="70" y="60" width="12" height="10" rx="2" fill="#7fda55"/>
+  
+  <!-- Third tab group -->
+  <rect x="16" y="84" width="80" height="22" rx="6" fill="#ffffff" opacity="0.9"/>
+  <rect x="22" y="90" width="12" height="10" rx="2" fill="#9370db"/>
+  <rect x="38" y="90" width="12" height="10" rx="2" fill="#9370db"/>
+  <rect x="54" y="90" width="12" height="10" rx="2" fill="#9370db"/>
+  
+  <!-- Folder bracket element -->
+  <path d="M104 40 L112 40 L112 92 L24 92" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

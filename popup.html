@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Grouper</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="4" width="18" height="3" rx="1" fill="currentColor" />
+                    <rect x="3" y="9" width="12" height="3" rx="1" fill="currentColor" />
+                    <rect x="3" y="14" width="15" height="3" rx="1" fill="currentColor" />
+                </svg>
+            </div>
+            <h1>Tab Grouper</h1>
+        </div>
+
+        <!-- Create Group Section -->
+        <div class="section" id="createSection">
+            <h2>Create New Group</h2>
+            <div class="input-group">
+                <input type="text" id="groupNameInput" placeholder="Enter group name..." maxlength="30">
+                <button id="createGroupBtn" class="btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 5v14m-7-7h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    Create
+                </button>
+            </div>
+        </div>
+
+        <!-- Add Current Tab Section -->
+        <div class="section" id="addTabSection">
+            <h2>Add Current Tab</h2>
+            <div class="current-tab" id="currentTabInfo">
+                <div class="tab-icon">🌐</div>
+                <div class="tab-details">
+                    <div class="tab-title" id="currentTabTitle">Loading...</div>
+                    <div class="tab-url" id="currentTabUrl">Loading...</div>
+                </div>
+            </div>
+            <div class="groups-list" id="groupsList">
+                <!-- Groups will be populated here -->
+            </div>
+        </div>
+
+        <!-- Manage Groups Section -->
+        <div class="section" id="manageSection">
+            <h2>Manage Groups</h2>
+            <div class="groups-manage" id="groupsManage">
+                <!-- Groups management will be populated here -->
+                <!-- Sample group structure (will be generated dynamically) -->
+                <!--
+                <div class="manage-group-item">
+                    <div class="manage-group-header">
+                        <div class="manage-group-info">
+                            <div class="group-icon" style="background-color: #6366f120; color: #6366f1;">
+                                📁
+                            </div>
+                            <div class="group-name">Example Group</div>
+                            <div class="group-count">3</div>
+                        </div>
+                        <div class="manage-actions">
+                            <button class="btn-secondary btn-open-all" data-group="Example Group">Open All</button>
+                            <button class="btn-secondary btn-danger delete-group-btn" data-group="Example Group">Delete</button>
+                        </div>
+                    </div>
+                    <div class="group-tabs">
+                        <div class="tab-item">
+                            <div class="tab-item-icon">🌐</div>
+                            <div class="tab-item-title" title="Example Tab 1">Example Tab 1</div>
+                            <button class="btn-secondary btn-danger remove-tab-btn" data-group="Example Group" data-index="0">×</button>
+                        </div>
+                        <div class="tab-item">
+                            <div class="tab-item-icon">🌐</div>
+                            <div class="tab-item-title" title="Example Tab 2">Example Tab 2</div>
+                            <button class="btn-secondary btn-danger remove-tab-btn" data-group="Example Group" data-index="1">×</button>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+
+        <!-- No Groups Message -->
+        <div class="no-groups" id="noGroupsMessage" style="display: none;">
+            <div class="empty-state">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="4" width="18" height="3" rx="1" fill="currentColor" opacity="0.3" />
+                    <rect x="3" y="9" width="12" height="3" rx="1" fill="currentColor" opacity="0.5" />
+                    <rect x="3" y="14" width="15" height="3" rx="1" fill="currentColor" opacity="0.7" />
+                </svg>
+                <p>No groups created yet</p>
+                <p class="sub-text">Create your first group to start organizing tabs</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
